@@ -1,0 +1,54 @@
+extends ./layout
+
+block css
+  link(href='https://fonts.googleapis.com/css?family=Droid+Sans|Libre+Baskerville|Abril+Fatface', rel='stylesheet', type='text/css')
+  link(href='css/style.css', rel='stylesheet')
+
+block content
+ html
+  body
+    .container
+      h1 Edit Profile
+      hr
+      .row
+        // left column
+        .col-md-3
+          .text-center
+            img.avatar.img-circle(src='/images/cute_monkey.png', alt='avatar')
+            h6 Upload a different photo...
+            input.form-control(type='file')
+        // edit form column
+        .col-md-9.personal-info
+          .alert.alert-info.alert-dismissable
+            a.panel-close.close(data-dismiss='alert') ×
+            i.fa.fa-coffee
+            strong  This is an alert
+            | . Your friend Mrytle says, "Hello!"
+            img#friendImage(src="/images/mrytle.png")
+          h3 Personal info
+          form.form-horizontal(role='form')
+            .form-group
+              label.col-lg-3.control-label First name:
+              .col-lg-8
+                input.form-control(type='text', value='First Name')
+            .form-group
+              label.col-lg-3.control-label Last name:
+              .col-lg-8
+                input.form-control(type='text', value='Last Name')
+            .form-group
+              label.col-lg-3.control-label Company:
+              .col-lg-8
+                input.form-control(type='text', value='Company Name')
+            .form-group
+              label.col-lg-3.control-label Email:
+              .col-lg-8
+                input.form-control(type='text', value='Email')
+            .form-group
+              label.col-lg-3.control-label Hobbies:
+              .col-lg-8
+                input.form-control(type='text', value='hobbies')
+    hr
+
+
+block js
+  script(src='js/main.js')
