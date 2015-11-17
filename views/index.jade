@@ -8,7 +8,7 @@ block content
  html
   body
     .container
-      h1 Edit Profile
+      h1 Profile
       hr
       .row
         // left column
@@ -19,36 +19,56 @@ block content
             input.form-control(type='file')
         // edit form column
         .col-md-9.personal-info
+          h2 MESSAGE AREA
           .alert.alert-info.alert-dismissable
             a.panel-close.close(data-dismiss='alert') ×
             i.fa.fa-coffee
             strong  This is an alert
             | . Your friend Mrytle says, "Hello!"
+          label Write Mrytle back!
+            input
+            input.btn.btn-default(type='reset', value='Send')
             img#friendImage(src="/images/mrytle.png")
+            i.fa.fa-coffee
           h3 Personal info
-          form.form-horizontal(role='form')
+         form.form-horizontal(role='form')
             .form-group
               label.col-lg-3.control-label First name:
               .col-lg-8
-                input.form-control(type='text', value='First Name')
+                input.form-control(type='text', value='Harry')
             .form-group
               label.col-lg-3.control-label Last name:
               .col-lg-8
-                input.form-control(type='text', value='Last Name')
+                input.form-control(type='text', value='Larry')
             .form-group
               label.col-lg-3.control-label Company:
               .col-lg-8
-                input.form-control(type='text', value='Company Name')
+                input.form-control(type='text', value='TrreLand')
             .form-group
               label.col-lg-3.control-label Email:
               .col-lg-8
-                input.form-control(type='text', value='Email')
+                input.form-control(type='text', value='harrylarry@gmail.com')
             .form-group
               label.col-lg-3.control-label Hobbies:
               .col-lg-8
-                input.form-control(type='text', value='hobbies')
-    hr
-
-
+                input.form-control(type='text', value='tree climbing')
+             .form-group
+              label.col-md-3.control-label Username:
+              .col-md-8
+                input.form-control(type='text', value='username')
+            .form-group
+              label.col-md-3.control-label Password:
+              .col-md-8
+                input.form-control(type='password', value='11111122333')
+            .form-group
+              label.col-md-3.control-label Confirm password:
+              .col-md-8
+                input.form-control(type='password', placeholder='11111122333')
+            .form-group
+              label.col-md-3.control-label
+              .col-md-8
+                input.btn.btn-primary(type='button', value='Save Changes')
+                span
+                input.btn.btn-default(type='reset', value='Cancel')
 block js
   script(src='js/main.js')
