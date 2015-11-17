@@ -10,7 +10,7 @@
     "setup": "rm -rf node_modules public/bower_components && npm i && bower i"
   },
   "engines": {
-    "node": "5.0.0"
+    "node": "4.0.0"
   },
   "license": "ISC",
   "dependencies": {
