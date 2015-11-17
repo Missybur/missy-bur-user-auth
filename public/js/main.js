@@ -4,10 +4,6 @@ $(document).ready(init);
 
 function init() {
   $('#logout').click(logout);
-  $('#edit').click(editInfo);
-
-
-
 
 }
 
@@ -18,10 +14,5 @@ function logout() {
     window.location.replace('/');
   });
 
-  function editInfo(){
-   $('#edit').click(function(){
-    $('div').attr('contenteditable','true');
-})
-  });
-}
+
 
